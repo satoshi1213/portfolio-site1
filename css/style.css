@@ -388,6 +388,9 @@ body.is-fixed {
             flex-direction: row-reverse;
     gap: 150px;
   }
+  .about__img {
+    width: 570px;
+  }
   .flow__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

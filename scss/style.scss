@@ -507,6 +507,10 @@ body {
             flex-direction: row-reverse;
             gap: 150px;
         }
+
+        &__img {
+            width: 570px;
+        }
     }
 
     .flow {
