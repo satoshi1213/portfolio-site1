@@ -22,16 +22,15 @@ body {
 
         .button__text{
         color: color.$bg-dark;
-        }  
+        }
     }
-    
+
     &--border {
         border: 1px solid color.$white;
-        
+
         .button__text {
             color: color.$white;
         }
-    
     }
 
     &__icon {
@@ -87,7 +86,7 @@ body {
         overflow: hidden;
         color: transparent;
         background: url(../img/bg_menu.png) center center no-repeat;
-        background-size: 100% auto; 
+        background-size: 100% auto;
 
         &.is-checked {
             background: url(../img/bg_menu-close.png) center center no-repeat;
@@ -121,10 +120,6 @@ body {
         height: 209px;
         background: url(../img/sp/bg_fv.png) center center no-repeat;
         background-size: 100% auto;
-    }
-
-    &__heading {
-
     }
 
     &__heading-main {
@@ -183,11 +178,6 @@ body {
 
 // service
 .service {
-
-    &__list {
-
-    }
-
     &__item {
         & + & {
             margin-top: 14px;
@@ -220,28 +210,25 @@ body {
     background-color: color.$bg-light;
 
     &__list {
-
-    }
-
-    &__item {
-        
-        & + & {
-            margin-top: 40px;
-        }
+        display: block;
     }
 
     &__item-img {
         margin-bottom: 12px;
+        max-width: 36%;
 
         img {
-            box-shadow: 0 4px 15px 0 rgba(color.$black, 0.15);   
+            box-shadow: 0 4px 15px 0 rgba(color.$black, 0.15);
+            max-width: 260px;
+            height: 150px;
+            margin-bottom: 30px;
         }
     }
 
     &__item-name {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
-        margin-bottom: 6px;
+        margin-bottom: 10px;
     }
 
     &__item-link {
@@ -252,21 +239,12 @@ body {
 
 // about
 .about {
-    &__container {
-
-
-    }
-
     &__img {
-        margin-top: 32px;
+        margin-top: 25px;
 
         img {
             box-shadow:  0 4px 15px 0 rgba(color.$black, 0.15);
         }
-    }
-
-    &__text-contents {
-
     }
 
     &__text {
@@ -275,14 +253,14 @@ body {
 
         & + & {
             margin-top: 1em;
-        }    
+        }
     }
 }
 
 // flow
 .flow {
     background-color: color.$bg-light;
-    
+
     &__list {
         margin-top: 64px;
     }
@@ -333,20 +311,12 @@ body {
 
 // message
 .message {
-    &__container {
-
-    }
-
     &__img {
         margin-bottom: 32px;
 
         img {
             box-shadow:  0 4px 15px 0 rgba(color.$black, 0.15);
         }
-    }
-
-    &__text-contents {
-
     }
 
     &__text {
@@ -372,7 +342,7 @@ body {
 
     }
 }
-    
+
 // footer
 .footer {
     text-align: center;
@@ -380,13 +350,13 @@ body {
 
     &__copy {
         font-size: 11px;
-        font-family: 'Noto Sans JP', sans-serif;    
+        font-family: 'Noto Sans JP', sans-serif;
     }
 }
 
 
 
-//pc 
+//pc
 
 @include breakpoints.mq(pc) {
     .wrapper {
@@ -394,9 +364,9 @@ body {
     }
 
     .main {
-        flex-basis: 79.2%; 
+        flex-basis: 79.2%;
     }
-    
+
     .header {
         position: relative;
         flex-basis: 20.8%;
@@ -409,6 +379,9 @@ body {
         }
 
         &__logo {
+            display: block;
+            text-align: center;
+            margin:0 40px 40px;
             font-size: 30px;
             letter-spacing: 0.12em;
             line-height: 1;
@@ -442,7 +415,7 @@ body {
 
         &--bg {
             color: color.$bg-dark;
-            
+
             &:hover {
                 opacity: 0.7;
             }
@@ -463,7 +436,7 @@ body {
             font-size: 60px;
         }
     }
-        
+
     .fv {
         &__contents {
         background: url(../img/bg_fv.png) center center no-repeat;
@@ -493,11 +466,9 @@ body {
 
     .works {
         &__list {
-            &__item {
-            & + & {
-                margin-top: 10px;
-            }
-        }
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
         }
     }
 
@@ -546,7 +517,7 @@ body {
 
 }
 
-// tb 
+// tb
 
 @include breakpoints.mq(tb) {
     .section {
