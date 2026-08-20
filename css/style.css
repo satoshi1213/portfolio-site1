@@ -178,6 +178,7 @@ body.is-fixed {
 }
 .works__list {
   display: block;
+  margin-bottom: 15px;
 }
 .works__item-img {
   margin-bottom: 12px;
